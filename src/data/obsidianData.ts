@@ -1,0 +1,486 @@
+// Extracted data from Purpose & Glow client site
+export interface SampleItem {
+  id: string;
+  t: string;
+  cat: string;
+  cl: string;
+  st: string;
+  who: string;
+  d: string;
+  q: string;
+  a: string;
+  m: [string, string][];
+  isNew?: boolean;
+  nw?: boolean | number;
+}
+
+export interface PlateItem {
+  st: string;
+  t: string;
+  who: string;
+  role: string;
+  cl: string;
+  d: string;
+  m: [string, string][];
+}
+
+export const OBSIDIAN_FILTERS: [string, string][] = [
+  [
+    "all",
+    "All"
+  ],
+  [
+    "executive",
+    "Executive"
+  ],
+  [
+    "technical",
+    "Technical"
+  ],
+  [
+    "healthcare",
+    "Healthcare"
+  ],
+  [
+    "student",
+    "Student"
+  ],
+  [
+    "leadership",
+    "Leadership"
+  ],
+  [
+    "creative",
+    "Creative"
+  ],
+  [
+    "modern",
+    "Modern"
+  ],
+  [
+    "classic",
+    "Classic"
+  ],
+  [
+    "ats",
+    "ATS-Optimized"
+  ],
+  [
+    "shortlist",
+    "Shortlist"
+  ]
+];
+
+export const OBSIDIAN_PLATES: PlateItem[] = [
+  {
+    "st": "classic",
+    "t": "Classic Chronological",
+    "who": "Daniel Shaw, J.D.",
+    "role": "Corporate Attorney",
+    "cl": "Plate I · Law, finance, executive",
+    "d": "Centered serif name, double rule and reverse-chronological sections. Conservative, quiet and trusted by partners and boards.",
+    "m": [
+      [
+        "1–2",
+        "Pages"
+      ],
+      [
+        "Law · Finance",
+        "Best for"
+      ]
+    ]
+  },
+  {
+    "st": "modern",
+    "t": "Modern Two-Column",
+    "who": "Maya Johnson",
+    "role": "Senior Product Designer",
+    "cl": "Plate II · Product, design, healthcare",
+    "d": "A tinted sidebar holds skills, tools and contact details so the main column can tell the impact story without clutter.",
+    "m": [
+      [
+        "1",
+        "Page"
+      ],
+      [
+        "Design · Tech",
+        "Best for"
+      ]
+    ]
+  },
+  {
+    "st": "ats",
+    "t": "ATS Single Column",
+    "who": "Omar Haddad",
+    "role": "Supply Chain Analyst",
+    "cl": "Plate III · Corporate portals",
+    "d": "Standard headings, no tables or graphics, keywords mapped to postings. Built to be parsed perfectly, then read gladly.",
+    "m": [
+      [
+        "97%",
+        "Avg ATS match"
+      ],
+      [
+        "Portals",
+        "Best for"
+      ]
+    ]
+  },
+  {
+    "st": "infographic",
+    "t": "Infographic Hybrid",
+    "who": "Priya Nair",
+    "role": "UX Researcher",
+    "cl": "Plate IV · Design-led teams",
+    "d": "A slim timeline and skill scale for human readers, always delivered with a text-only ATS twin for application systems.",
+    "m": [
+      [
+        "2",
+        "Versions"
+      ],
+      [
+        "Creative",
+        "Best for"
+      ]
+    ]
+  },
+  {
+    "st": "federal",
+    "t": "Federal / USAJOBS",
+    "who": "Lisa Grant",
+    "role": "Program Manager",
+    "cl": "Plate V · Government roles",
+    "d": "Hours per week, grade, series and supervisor details, with specialized-experience statements matched to each announcement.",
+    "m": [
+      [
+        "3–5",
+        "Pages"
+      ],
+      [
+        "GS roles",
+        "Best for"
+      ]
+    ]
+  },
+  {
+    "st": "academic",
+    "t": "One-Page Academic",
+    "who": "Ethan Walsh",
+    "role": "Engineering Student",
+    "cl": "Plate VI · Students & interns",
+    "d": "Education and projects lead, skills presented as tight clusters, and every line earns its place on a single page.",
+    "m": [
+      [
+        "1",
+        "Page"
+      ],
+      [
+        "Students",
+        "Best for"
+      ]
+    ]
+  }
+];
+
+export const OBSIDIAN_SAMPLES: SampleItem[] = [
+  {
+    "id": "coo",
+    "t": "Chief Operating Officer",
+    "cat": "executive",
+    "cl": "Executive Leadership",
+    "st": "classic",
+    "who": "Sarah Mitchell",
+    "d": "Senior executive résumé showcasing 15+ years of C-suite experience, strategic leadership achievements, and P&L management across Fortune 500 companies.",
+    "q": "Landed three interviews within two weeks. The résumé perfectly captured my executive presence.",
+    "a": "Sarah M.",
+    "m": [
+      [
+        "92%",
+        "Interview rate"
+      ],
+      [
+        "$180K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "azure",
+    "t": "Azure Data Engineer",
+    "cat": "technical",
+    "cl": "Technical",
+    "st": "ats",
+    "who": "David Kim",
+    "d": "Technical résumé for a cloud data professional with Azure certifications, big data pipeline experience, and quantified performance improvements.",
+    "q": "Got past ATS filters at Microsoft and Amazon. The keyword optimization was spot-on.",
+    "a": "David K.",
+    "m": [
+      [
+        "88%",
+        "Response rate"
+      ],
+      [
+        "$145K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "hca",
+    "t": "Healthcare Administrator",
+    "cat": "healthcare",
+    "cl": "Healthcare",
+    "st": "modern",
+    "who": "Jennifer Lowe",
+    "d": "Healthcare management résumé emphasizing operational excellence, patient care outcomes, regulatory compliance, and team leadership.",
+    "q": "Received offers from two major hospital systems. The focus on patient outcomes made all the difference.",
+    "a": "Jennifer L.",
+    "m": [
+      [
+        "95%",
+        "Interview rate"
+      ],
+      [
+        "$98K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "grad",
+    "t": "Recent Graduate — Marketing",
+    "cat": "student",
+    "cl": "Student",
+    "st": "academic",
+    "who": "Alex Torres",
+    "d": "Entry-level résumé highlighting academic projects, internship experience, relevant coursework, and transferable skills for marketing roles.",
+    "q": "As a new grad with limited experience, this résumé helped me stand out. Got my first job offer!",
+    "a": "Alex T.",
+    "m": [
+      [
+        "78%",
+        "Response rate"
+      ],
+      [
+        "$62K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "pmo",
+    "t": "PMO Director",
+    "cat": "leadership",
+    "cl": "Leadership",
+    "st": "classic",
+    "who": "Michael Reyes",
+    "d": "Project management office leader résumé demonstrating portfolio governance, delivery success, stakeholder management, and team development.",
+    "q": "The metrics-driven approach showcased my impact perfectly. Landed a director role at a Fortune 100.",
+    "a": "Michael R.",
+    "m": [
+      [
+        "90%",
+        "Interview rate"
+      ],
+      [
+        "$135K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "staff",
+    "t": "IT Staffing Professional",
+    "cat": "technical",
+    "cl": "Technical",
+    "st": "ats",
+    "who": "Rachel Patel",
+    "d": "Technical recruiter résumé highlighting talent acquisition expertise, placement metrics, and client relationship management.",
+    "q": "The focus on my placement success rate got me noticed immediately. Multiple offers within a month.",
+    "a": "Rachel P.",
+    "m": [
+      [
+        "85%",
+        "Response rate"
+      ],
+      [
+        "$82K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "mktg",
+    "t": "Marketing Manager",
+    "cat": "creative",
+    "cl": "Creative",
+    "st": "infographic",
+    "who": "Chris Bennett",
+    "d": "Creative marketing résumé showcasing campaign success, brand development, digital strategy, and measurable ROI across channels.",
+    "q": "The visual hierarchy and campaign metrics were exactly what creative agencies wanted to see.",
+    "a": "Chris B.",
+    "m": [
+      [
+        "82%",
+        "Interview rate"
+      ],
+      [
+        "$75K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "fin",
+    "t": "Finance Director — CPA",
+    "cat": "executive",
+    "cl": "Executive",
+    "st": "classic",
+    "who": "Patricia Wells",
+    "d": "Senior finance résumé highlighting CPA credentials, financial reporting expertise, audit management, and strategic planning.",
+    "q": "The emphasis on cost savings and process improvements resonated with every interviewer.",
+    "a": "Patricia W.",
+    "m": [
+      [
+        "94%",
+        "Interview rate"
+      ],
+      [
+        "$165K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "pd",
+    "t": "Senior Product Designer",
+    "cat": "modern",
+    "cl": "Modern · Two-Column",
+    "st": "modern",
+    "who": "Maya Johnson",
+    "nw": 1,
+    "d": "Contemporary two-column format with a tinted skills sidebar, case-study links, and impact bullets pairing design outcomes with conversion and retention metrics.",
+    "q": "Hiring managers kept mentioning how scannable it was. Signed with a Series C startup in five weeks.",
+    "a": "Maya J.",
+    "m": [
+      [
+        "89%",
+        "Interview rate"
+      ],
+      [
+        "$128K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "atty",
+    "t": "Corporate Attorney",
+    "cat": "classic",
+    "cl": "Classic · Reverse-Chronological",
+    "st": "classic",
+    "who": "Daniel Shaw, J.D.",
+    "nw": 1,
+    "d": "Traditional, conservative layout trusted by law firms — bar admissions up front, representative M&A matters, and deal values presented with understated precision.",
+    "q": "Exactly the polished, traditional look partners expect. Made lateral partner at an AmLaw 100 firm.",
+    "a": "Daniel S.",
+    "m": [
+      [
+        "91%",
+        "Interview rate"
+      ],
+      [
+        "$210K",
+        "Avg salary"
+      ]
+    ]
+  },
+  {
+    "id": "scm",
+    "t": "Supply Chain Analyst",
+    "cat": "ats",
+    "cl": "ATS-Optimized · Single Column",
+    "st": "ats",
+    "who": "Omar Haddad",
+    "nw": 1,
+    "d": "Parser-friendly single-column build with standard headings, no tables or graphics, and keywords mapped to target postings for SAP, forecasting and logistics roles.",
+    "q": "Went from silence to four recruiter calls in ten days once the résumé passed the scanners.",
+    "a": "Omar H.",
+    "m": [
+      [
+        "97%",
+        "ATS match"
+      ],
+      [
+        "$88K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "fed",
+    "t": "Federal Program Manager",
+    "cat": "classic",
+    "cl": "Classic · Federal / USAJOBS",
+    "st": "federal",
+    "who": "Lisa Grant",
+    "nw": 1,
+    "d": "Federal-compliant format with hours per week, supervisor details, and specialized-experience statements written to each announcement's qualification criteria.",
+    "q": "Finally referred as 'Best Qualified' after two years of trying. Promoted to GS-14.",
+    "a": "Lisa G.",
+    "m": [
+      [
+        "GS-14",
+        "Grade reached"
+      ],
+      [
+        "87%",
+        "Referral rate"
+      ]
+    ]
+  },
+  {
+    "id": "uxr",
+    "t": "UX Researcher",
+    "cat": "creative",
+    "cl": "Creative · Infographic Hybrid",
+    "st": "infographic",
+    "who": "Priya Nair",
+    "nw": 1,
+    "d": "Visual hybrid pairing a career timeline graphic with a fully text-based ATS twin — memorable for humans, readable for software.",
+    "q": "Getting both versions was genius. The visual one opened conversations, the ATS one got me through the portal.",
+    "a": "Priya N.",
+    "m": [
+      [
+        "84%",
+        "Response rate"
+      ],
+      [
+        "$118K",
+        "Avg offer"
+      ]
+    ]
+  },
+  {
+    "id": "meng",
+    "t": "Mechanical Engineering Intern",
+    "cat": "student",
+    "cl": "Student · One-Page Academic",
+    "st": "academic",
+    "who": "Ethan Walsh",
+    "nw": 1,
+    "d": "Tight one-page résumé leading with technical projects, CAD and MATLAB skills, and competition-team results for top-tier summer internships.",
+    "q": "Career fair recruiters actually stopped to read it. Accepted an internship at an aerospace company.",
+    "a": "Ethan W.",
+    "m": [
+      [
+        "6",
+        "Internship offers"
+      ],
+      [
+        "$38/hr",
+        "Top offer"
+      ]
+    ]
+  }
+];

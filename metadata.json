@@ -1,0 +1,6 @@
+{
+  "name": "Purpose & Glow — Client Signal & Lead Qualification Studio",
+  "description": "Custom keyword intent monitor, LinkedIn engagement-to-client qualifier, and diagnostic outreach workbench built for Nicole Gotsch and Purpose & Glow Career Solutions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
